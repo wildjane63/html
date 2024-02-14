@@ -25,7 +25,8 @@ proxies:
     - { name: 香港, type: vless, server: 172.67.46.248, port: 80, uuid: 47ab60ff-b07a-4b20-80ad-f9cece86273d, network: ws, tls: false, udp: false, client-fingerprint: chrome, ws-opts: { path: "/?ed=2048", headers: { host: 1121.wildjane63.workers.dev } } }
     - { name: 香港2, type: vless, server: 172.67.5.147, port: 80, uuid: 47ab60ff-b07a-4b20-80ad-f9cece86273d, network: ws, tls: false, udp: false, client-fingerprint: chrome, ws-opts: { path: "/?ed=2048", headers: { host: 1121.wildjane63.workers.dev } } }
 proxy-groups:
-    - { name: 代理, type: select, proxies: [ skkmoe, udacity, shopify, 560, 新加坡v6, japan, anycast ] }
+    - { name: 代理, type: select, proxies: [ 自动选择, 560, skkmoe, udacity, shopify, 新加坡v6, japan ] }
+    - { name: 自动选择, type: url-test, proxies: [ skkmoe, udacity, shopify, 560, 新加坡v6, japan ], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
 rules:
     - 'DOMAIN-SUFFIX,youtu.be,代理'
     - 'DOMAIN-KEYWORD,video,代理'
