@@ -22,10 +22,10 @@ proxies:
     - { name: 560, type: vless, server: 104.26.5.60, port: 80, uuid: 8a3263bc-cbba-47a1-9ca0-6b7667f03f8e, network: ws, tls: false, udp: false, sni: fandai.wildjane63.workers.dev, client-fingerprint: chrome, ws-opts: { path: "/?ed=2048", headers: { host: fandai.wildjane63.workers.dev } } }
     - { name: 新加坡v6, type: vless, server: 2606:4700:8d73:5e39:ad32:f985:c15c:3bbf, port: 80, uuid: 8a3263bc-cbba-47a1-9ca0-6b7667f03f8e, network: ws, tls: false, udp: false, sni: fandai.wildjane63.workers.dev, client-fingerprint: chrome, ws-opts: { path: "/?ed=2048", headers: { host: fandai.wildjane63.workers.dev } } }
     - { name: japan, type: vless, server: japan.com, port: 80, uuid: 8a3263bc-cbba-47a1-9ca0-6b7667f03f8e, network: ws, tls: false, udp: false, sni: fandai.wildjane63.workers.dev, client-fingerprint: chrome, ws-opts: { path: "/?ed=2048", headers: { host: fandai.wildjane63.workers.dev } } }
-    - { name: 香港, type: vless, server: 172.67.46.248, port: 80, uuid: 47ab60ff-b07a-4b20-80ad-f9cece86273d, network: ws, tls: false, udp: false, client-fingerprint: chrome, ws-opts: { path: "/?ed=2048", headers: { host: 1121.wildjane63.workers.dev } } }
+    - { name: 香港, type: vless, server: 172.67.6.147, port: 80, uuid: 47ab60ff-b07a-4b20-80ad-f9cece86273d, network: ws, tls: false, udp: false, client-fingerprint: chrome, ws-opts: { path: "/?ed=2048", headers: { host: 1121.wildjane63.workers.dev } } }
     - { name: 香港2, type: vless, server: 172.67.5.147, port: 80, uuid: 47ab60ff-b07a-4b20-80ad-f9cece86273d, network: ws, tls: false, udp: false, client-fingerprint: chrome, ws-opts: { path: "/?ed=2048", headers: { host: 1121.wildjane63.workers.dev } } }
 proxy-groups:
-    - { name: 代理, type: select, proxies: [ 自动选择, 560, skkmoe, udacity, shopify, 新加坡v6, japan ] }
+    - { name: 代理, type: select, proxies: [ 自动选择, 560, skkmoe, udacity, shopify, 新加坡v6, japan, 香港2, 香港 ] }
     - { name: 自动选择, type: url-test, proxies: [ skkmoe, udacity, shopify, 560, 新加坡v6, japan ], url: 'http://www.gstatic.com/generate_204', interval: 86400 }
 rules:
     - 'DOMAIN-SUFFIX,youtu.be,代理'
