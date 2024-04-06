@@ -104,14 +104,14 @@ proxies:
   - {"name":"Taiwan_hy_9","type":"hysteria","server":"www.dtku50.xyz","port":18470,"sni":"www.amazon.cn","skip-cert-verify":true,"alpn":["h3"],"auth_str":"","up":50,"down":80}
   - {"name":"France_hysteria_0","type":"hysteria","server":"51.158.54.46","port":55396,"sni":"youku.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":11,"down":55}
   - {"name":"United%2520States_hysteria_1","type":"hysteria","server":"173.234.25.52","port":30072,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":11,"down":55}
-  - {"name":"United%2520States_hysteria_2","type":"hysteria","server":"108.181.22.239","port":39967,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":11,"down":55}
-  - {"name":"United%2520States_hysteria_3","type":"hysteria","server":"167.160.91.115","port":41189,"sni":"www.amazon.cn","skip-cert-verify":true,"alpn":["h3"],"auth_str":"bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF","up":11,"down":55}
+  - {"name":"QQ3784575618","type":"hysteria","server":"108.181.22.239","port":39967,"sni":"bing.com","skip-cert-verify":true,"alpn":["h3"],"auth_str":"dongtaiwang.com","up":11,"down":55}
+  - {"name":"微信sup_Tec","type":"hysteria","server":"167.160.91.115","port":41189,"sni":"www.amazon.cn","skip-cert-verify":true,"alpn":["h3"],"auth_str":"bWAwIqINo7XDm1fUlXQGBifVIXoYs1ylgVKqWFKzK1XyDKuwNF","up":11,"down":55}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
-      - ♻️ 自动选择
-      - DIRECT
+      - QQ3784575618
+      - 微信sup_Tec
       - United%2520States_hysteria_0
       - France_vless_0
       - United States_vless_0_1
@@ -138,8 +138,8 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - United%2520States_hysteria_0
-      - France_vless_0
+      - QQ3784575618
+      - 微信sup_Tec
       - United States_vless_0_1
       - United States_vless_0_2
       - United States_vless_4
