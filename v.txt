@@ -130,8 +130,6 @@ proxy-groups:
       - Taiwan_hy_9
       - France_hysteria_0
       - United%2520States_hysteria_1
-      - United%2520States_hysteria_2
-      - United%2520States_hysteria_3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -156,8 +154,6 @@ proxy-groups:
       - Taiwan_hy_9
       - France_hysteria_0
       - United%2520States_hysteria_1
-      - United%2520States_hysteria_2
-      - United%2520States_hysteria_3
   - name: 🌍 国外媒体
     type: select
     proxies:
