@@ -45,36 +45,44 @@ dns:
     "*.baidu.com": 114.114.114.114
     "*.bdstatic.com": 114.114.114.114
   nameserver:
-    - https://doh.pub/dns-query
+    - 119.29.29.29
+    - 223.5.5.5
     - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+    - 114.114.114.114
+    - 156.154.70.1
+    - 1.0.0.1
+    - 8.8.4.4
   proxy-server-nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
-  fallback: []
+    - https://query.nmsls.pub/dns-query
+    - tls://query.nmsls.pub:8453
+  fallback:
+    - 208.67.222.222:5353
+    - 208.67.220.220:5353
+    - 208.67.222.220:5353
+    - 208.67.220.222:5353
+    - https://1.1.1.1/dns-query
+    - https://1.1.1.2/dns-query
+    - https://1.1.1.3/dns-query
+    - https://1.0.0.1/dns-query
+    - https://1.0.0.2/dns-query
+    - https://1.0.0.3/dns-query
+    - https://45.11.45.11/dns-query
+    - https://146.112.41.2/dns-query
+    - https://162.159.36.1/dns-query
+    - https://162.159.46.1/dns-query
+    - https://9.9.9.11:5053/dns-query
+    - https://101.6.6.6:8443/dns-query
+    - https://208.67.222.222/dns-query
+    - https://208.67.220.220/dns-query
+    - https://185.222.222.222/dns-query
+    - https://101.101.101.101/dns-query
+    - https://149.112.112.11:5053/dns-query
   fallback-filter:
     geoip: true
     geoip-code: CN
     ipcidr:
       - 240.0.0.0/4
-      - 0.0.0.0/32
-    domain:
-      - +.google.com
-      - +.facebook.com
-      - +.youtube.com
-  ipv6: true
-  fake-ip-filter:
-    - "*"
-    - +.lan
-    - +.local
-    - time.*.com
-    - ntp.*.com
-    - +.market.xiaomi.com
-  use-hosts: false
-  use-system-hosts: false
-  respect-rules: false
-  default-nameserver:
-    - tls://223.5.5.5
-  direct-nameserver: []
 proxies:
   - name: V2-103|美国|x2.0
     type: vmess
@@ -8129,8 +8137,7 @@ tun:
   auto-route: true
   auto-redirect: false
   auto-detect-interface: true
-  dns-hijack:
-    - any:53
+  dns-hijack: []
   route-exclude-address: []
   mtu: 1500
 sniffer:
