@@ -14,7 +14,6 @@ proxy-providers:
       interval: 300
     proxy: 直连
 
-proxy-providers:
   sAirport1:
     url: "https://yg.1-i.top/86c50e3a-5b87-49dd-bd20-03c7f2735e40/pty"
     type: http
@@ -25,7 +24,6 @@ proxy-providers:
       interval: 300
     proxy: 直连
 
-proxy-providers:
   Agirport1:
     url: "https://7.1-i.top/sub?token=140c7fb84f3a36999ad29f5b2feae78b"
     type: http
