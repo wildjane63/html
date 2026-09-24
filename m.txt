@@ -5,7 +5,7 @@
 # 机场订阅
 proxy-providers:
   Airport1:
-    url: "https://config.moe/config/22b1ea39388a77e259c0ef80df157987"
+    url: ""
     type: http
     interval: 86400
     health-check:
@@ -15,7 +15,7 @@ proxy-providers:
     proxy: 直连
 
   sAirport1:
-    url: "https://yg.1-i.top/86c50e3a-5b87-49dd-bd20-03c7f2735e40/pty"
+    url: ""
     type: http
     interval: 86400
     health-check:
