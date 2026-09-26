@@ -25,7 +25,7 @@ proxy-providers:
     proxy: 直连
 
   Agirport1:
-    url: "https://7.1-i.top/sub?token=140c7fb84f3a36999ad29f5b2feae78b"
+    url: "https://9.1-i.top/dmit"
     type: http
     interval: 86400
     health-check:
